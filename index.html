@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827"><title>AUDIT JURÍDICA AI</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><div class="logo">AJ</div><div><strong>AUDIT JURÍDICA AI</strong><small>INTELIGÊNCIA JURÍDICA • BRASIL</small></div></div><span class="status"><i></i> Ambiente de auditoria</span></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">PLATAFORMA DE ANÁLISE DOCUMENTAL</div><h1>Auditoria jurídica com <em>método e precisão.</em></h1><p>Analise contratos, procurações e documentos imobiliários. Identifique riscos, compare versões e gere relatórios técnicos com apoio de IA.</p></section>
+<div class="layout">
+<aside class="sidebar"><div class="side-title">MÓDULOS</div><nav id="nav">
+<button class="nav active" data-module="legal_review">◈ <span>Revisão jurídica</span></button>
+<button class="nav" data-module="clause_analysis">▤ <span>Análise de cláusulas</span></button>
+<button class="nav" data-module="power_of_attorney">✎ <span>Procurações</span></button>
+<button class="nav" data-module="property_review">⌂ <span>Auditoria imobiliária</span></button>
+<button class="nav" data-module="compare_contracts">⇄ <span>Comparar contratos</span></button>
+<button class="nav" data-module="swot_analysis">▦ <span>Análise SWOT</span></button>
+<button class="nav" data-module="economic_analysis">◉ <span>Análise econômica</span></button>
+<button class="nav" data-module="get_advice">✧ <span>Recomendações</span></button>
+<button class="nav" data-module="real_time_feedback">⟳ <span>Feedback de alterações</span></button>
+<button class="nav" data-module="finalize_audit">▣ <span>Relatório final</span></button>
+</nav><div class="side-note">Versão inicial • 1.0<br>Direito brasileiro</div></aside>
+<section class="panel">
+<div class="panel-head"><div><div class="eyebrow" id="module-tag">REVISÃO JURÍDICA</div><h2 id="module-title">Revisão jurídica completa</h2><p id="module-desc">Examine validade, formalidades, legislação aplicável e riscos do instrumento.</p></div><span class="pill">IA ASSISTIVA</span></div>
+<form id="audit-form">
+<label for="context">Contexto da análise <small>(opcional)</small></label><textarea id="context" name="context" rows="3" placeholder="Ex.: contrato de compra e venda, represento o vendedor, objetivo é verificar riscos antes da assinatura..."></textarea>
+<label for="contract">Texto principal <b>*</b></label><textarea id="contract" name="contract" rows="9" placeholder="Cole o contrato, cláusula, procuração ou dados relevantes da matrícula..." required></textarea>
+<div id="second-wrap" class="hidden"><label for="secondText">Segunda versão / documento comparativo</label><textarea id="secondText" name="secondText" rows="7" placeholder="Cole aqui a segunda versão para comparação..."></textarea></div>
+<label>Adicionar documentos <small>(PDF, Word ou TXT • até 2 arquivos • 12 MB cada)</small></label>
+<div class="upload"><input type="file" id="files" name="files" accept=".pdf,.docx,.txt" multiple><span>Arquivos serão processados para extração de texto.</span></div>
+<div class="actions"><button type="submit" id="submit">Iniciar auditoria <span>→</span></button><button type="button" class="secondary" id="clear">Limpar</button></div>
+</form>
+<div id="loading" class="loading hidden"><div class="spinner"></div><span>Analisando documentos e organizando os achados...</span></div>
+<section id="result-box" class="result-box hidden"><div class="result-head"><h3>Resultado da auditoria</h3><div><button id="copy" class="secondary small">Copiar</button><button id="download" class="secondary small">Baixar .txt</button></div></div><pre id="result"></pre></section>
+<div class="disclaimer">⚖️ <strong>Importante:</strong> ferramenta de apoio. A análise não substitui advogado, conferência em fontes oficiais, exame integral dos documentos nem validação pelo profissional responsável. Não envie dados pessoais desnecessários; anonimize CPF, RG, dados bancários e informações sensíveis.</div>
+</section></div>
+<footer>© 2026 AUDIT JURÍDICA AI • Uso responsável de inteligência artificial</footer>
+</main><script src="/app.js"></script></body></html>
